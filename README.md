@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
   
     @Override  
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {  
-        int id = item.getItemId();  
+        int id = item.getItemId();
+        // switch case didn't work, so we use if else
         if (item.getItemId() == R.id.item1) {  
             Toast.makeText(getApplicationContext(), "Item 1 Selected", Toast.LENGTH_LONG).show();  
             return true;  
